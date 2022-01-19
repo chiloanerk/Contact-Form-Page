@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Contact Form to Email</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
         <form onsubmit="sendEmail(); reset(); return false;">
@@ -15,11 +17,10 @@
             <input type="email" id="email" placeholder="Email id" required>
             <input type="text" id="phone" placeholder="Phone no." required>
             <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
-            <button type="submit">Send</button>
+            <button type="submit"><a
+                    href="mailto:example@email.com?subject=From%20your%20website%3A%20Hi%20I'd%20like%20to%20get%20in%20touch&body=How%20can%20we%20help%20you%3F"+docum>Send</a></button>
         </form>
     </div>
-    <script>
- 
-    </script>
 </body>
+
 </html>
